@@ -1,0 +1,60 @@
+:root {
+  --header-color: rgb(5,165,191);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  background-color: var(--header-color);
+  padding: 5px;
+  width: 100vw;
+  height: 10vh;
+}
+
+.icon-sambay {
+  width: 10%;
+}
+
+.icon-search {
+  position: absolute;
+  color: rgb(122,132,147);
+  left: 25.5vw;
+}
+
+.search-input{
+  border: none;
+  border-radius: 5px; 
+  height: 5vh;
+  width: 25%;
+  outline: none;
+  margin-right: 20%;
+  padding-left: 30px;
+}
+
+.user-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 15%;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../img/userImage.jpg);
+  background-size: cover;
+  transition: all 0.4s linear;
+}
+
+.user-icon:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+  box-shadow: 1px 0 20px 2px white;
+}
+
+.icon-react {
+  color: white;
+  font-size: 24px;
+}
