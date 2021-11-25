@@ -2,7 +2,7 @@
   width: 100px;
 }
 
-.footer-describe {
+.footer-describe, .footer-describe-news {
   align-self: flex-start;
   position: absolute;
   bottom: -14px;

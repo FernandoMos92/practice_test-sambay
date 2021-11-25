@@ -21,9 +21,30 @@ const ContainerCard = styled.div`
   }
 `;
 
+const ContainerCardNews = styled.div`
+  position: relative;
+  align-items: center;
+  border-radius: 8px;
+  border-bottom: 15px solid rgb(105,182,74);
+  box-shadow: 0 0 5px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 270px;
+  width: 200px;
+  padding: 10px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  user-select: none;
+  :hover{
+  transform: scale(.9);
+  box-shadow: 2px 2px 20px rgb(56, 54, 54)
+  }
+`;
+
 const DescribeProduct = styled.p`
   font-size: 14px;
-  color:rgb(161, 153, 153);
+  color:rgb(56, 54, 60);
 `;
 
 const PriceProduct = styled.p`
@@ -56,6 +77,7 @@ const NameSection = styled.label`
 
 export {
   ContainerCard, 
+  ContainerCardNews,
   DescribeProduct, 
   PriceProduct, 
   CondicionalPrice,

@@ -3,13 +3,17 @@
 }
 
 .header-container {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-around;
   align-items:center;
   background-color: var(--header-color);
+  margin-bottom: 20px;
   padding: 5px;
   width: 99vw;
   height: 10vh;
+  z-index: 1;
 }
 
 .icon-sambay {
