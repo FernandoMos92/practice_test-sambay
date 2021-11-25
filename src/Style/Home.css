@@ -1,5 +1,8 @@
-.section-promo{
-  border: 2px solid black;
+.section-promo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
 }
 
 .section-promo, .section-news {

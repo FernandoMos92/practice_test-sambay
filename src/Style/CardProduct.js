@@ -13,6 +13,8 @@ const ContainerCard = styled.div`
   width: 200px;
   padding: 10px;
   transition: all 0.2s linear;
+  cursor: pointer;
+  user-select: none;
   :hover{
   transform: scale(.9);
   box-shadow: 2px 2px 20px rgb(56, 54, 54)

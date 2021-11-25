@@ -21,8 +21,44 @@ class Home extends Component {
               image={image}
               price={price}
               payment={payment}
-              status={status}
+              status={status} 
             />
+                
+                <CardProduct
+              describe={describe}
+              image={image}
+              price={price}
+              payment={payment}
+              status={status} 
+            />
+                
+                <CardProduct
+              describe={describe}
+              image={image}
+              price={price}
+              payment={payment}
+              status={status} 
+            />
+                
+                <CardProduct
+              describe={describe}
+              image={image}
+              price={price}
+              payment={payment}
+              status={status} 
+            />
+                
+                <CardProduct
+              describe={describe}
+              image={image}
+              price={price}
+              payment={payment}
+              status={status} 
+            />
+            
+            
+            
+       
           </section>
         </NameSection>
         <NameSection htmlFor="section-news">
