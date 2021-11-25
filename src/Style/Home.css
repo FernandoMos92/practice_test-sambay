@@ -1,4 +1,10 @@
+.section-promo{
+  border: 2px solid black;
+}
+
 .section-promo, .section-news {
   width: 75vw;
   height: 50vh;
+  color: rgb(111,111,111);
+  padding: 2%;
 }
