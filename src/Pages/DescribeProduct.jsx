@@ -1,52 +1,11 @@
 import React, { Component } from 'react';
 import { MdArrowBackIosNew } from 'react-icons/md';
 import Header from '../Components/Header'
-import { SectionDescribe } from '../Style/CardProduct';
+import { SectionDescribe, ContainerBack, TitleProduct, ContainerMain, ImageProduct, ContainerInfo, ContainerPrice } from '../Style/CardProduct';
 import { Link } from 'react-router-dom';
 import '../Style/DescribeProduct.css';
-import styled from 'styled-components';
-const { product } = require('../Api/productApi');
+const { product} = require('../Api/productApi');
 
-const ContainerMain = styled.main`
-  max-width: 100vw;
-  max-height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-flow: row nowrap;
-`;
-
-const ImageProduct = styled.img`
-  width: 40%;
-  box-shadow: 2px 2px 2px lightgray;
-  border-radius: 8px;
-  margin-left: 170px;
-`;
-
-const ContainerInfo = styled.div`
-  font-family: sans-serif;
-  position: absolute;
-  top: 25%;
-  right: 10%;
-`;
-
-const ContainerBack = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-`;
-
-const TitleProduct = styled.h4`
-  margin-left: 20px;
-  font-size: 18px;
-  color: rgb(77, 73, 73);
-`;
-
-const ContainerPrice = styled.div`
-  background-color:rgb(244,248,242);
-  border-bottom: 18px solid rgb(105,182,74);
-  border-radius: 8px;
-  padding: 10px;
-  width: 30vw;
-`;
 
 class DescribeProduct extends Component {
   render() {
@@ -58,31 +17,42 @@ class DescribeProduct extends Component {
           <Link to="/">
             <MdArrowBackIosNew />
           </Link>
+
           <TitleProduct>Caneca do Zequinha</TitleProduct>
+
         </ContainerBack>
+
         <ContainerMain>
           <SectionDescribe>
             <ImageProduct src={ image} alt={status} />
             <ContainerInfo>
               <ContainerPrice>
-                <p>Produto Novo</p>
-                <p>R$ {price}</p>
-                <p>Em até 2x</p>
+                <p className="title-product">Produto Novo</p>
+                <p className="price-product">
+                  R$ {price}
+                  <p className="condicionalPayment">{payment}</p>
+                </p>
               </ContainerPrice>
-              <label htmlFor="|">
+
+              <label className="labelDescribe">
+                <h2>Descrição</h2>
                 <p>
-              
+                {describe}
                 </p>
               </label>
-              <label htmlFor="">
+
+              <label className="labelDetalhes">
+                <h2>Detalhes do Produto</h2>
                 <ul>
-                  <li>Categoria 1</li>
-                  <li>Categoria 2</li>
-                  <li>Categoria 3</li>
-                  <li>Categoria 4</li>
-                  <li>Categoria 5</li>
+                  <li><strong style={{ color: 'rgb(5, 165, 191)'}}>Categoria:</strong> Utilidades Domésticas</li>
+                  <li><strong style={{ color: 'rgb(5, 165, 191)'}}>Material:</strong> Porcelana</li>
+                  <li><strong style={{ color: 'rgb(5, 165, 191)'}}>Parcele em:</strong> 2x</li>
+                  <li><strong style={{ color: 'rgb(5, 165, 191)'}}>Tamanho:</strong> 9cm X 8cm X 0cm X 8kg</li>
+                  <li><strong style={{ color: 'rgb(5, 165, 191)'}}>Marca:</strong> by Nilson Muller</li>
+                  <li><strong style={{ color: 'rgb(5, 165, 191)'}}>Estoque:</strong> 8</li>
                 </ul>
               </label>
+
             </ContainerInfo>
           </SectionDescribe>
         </ContainerMain>

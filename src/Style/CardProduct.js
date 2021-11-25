@@ -82,6 +82,107 @@ const SectionDescribe = styled.section`
   padding: 50px;
 `;
 
+const ContainerMain = styled.main`
+  max-width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  .labelDescribe{
+    h2{
+      font-family: sans-serif;
+      color: rgb(5,165,191);
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-left: 20px;
+      margin-bottom: 10%;
+    }
+  }
+
+  .labelDetalhes{
+    h2{
+      color: rgb(5, 165, 191);
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 8vw;
+      height: 10vw;
+      margin-top: 10px;
+      margin-left: 40px
+    }
+
+    ul li {
+      width: 10vw;
+      margin-right: 40px;
+      margin-bottom: 12px;
+      font-size:14px;
+    }
+  }
+`;
+
+const ImageProduct = styled.img`
+  width: 40%;
+  box-shadow: 2px 2px 2px lightgray;
+  border-radius: 8px;
+  margin-left: 170px;
+`;
+
+const ContainerInfo = styled.div`
+  font-family: sans-serif;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+`;
+
+const ContainerBack = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+`;
+
+const TitleProduct = styled.h4`
+  margin-left: 20px;
+  font-size: 18px;
+  color: rgb(77, 73, 73);
+`;
+
+const ContainerPrice = styled.div`
+  background-color:rgb(244,248,242);
+  border-bottom: 18px solid rgb(105,182,74);
+  border-radius: 8px;
+  padding: 10px;
+  width: 30vw;
+  margin-bottom: 10%;
+  p {
+    font-size: 16px;
+  }
+
+  .title-product {
+    color:rgb(5,165,191);
+    font-weight: 800;
+  }
+
+  .price-product{
+    margin: 5px 0;
+    font-size: 24px;
+    display: flex;
+    flex-flow: row nowrap;
+    color: rgb(5,165,191);
+    font-weight: 800;
+    margin-left: 20px;
+    .condicionalPayment{
+      margin: 5px 5px;
+      font-size: 10px;
+      color: gray;
+    }
+  }
+  `;
+
 export {
   ContainerCard, 
   ContainerCardNews,
@@ -91,4 +192,10 @@ export {
   MainContainer,
   NameSection,
   SectionDescribe,
+  ContainerMain,
+  ImageProduct,
+  ContainerInfo,
+  ContainerBack,
+  TitleProduct,
+  ContainerPrice,
 };

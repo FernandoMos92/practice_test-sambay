@@ -68,41 +68,57 @@ class Home extends Component {
         <NameSection htmlFor="section-news">
           Últimas novidades
           <section className="section-news" id="section-news">
-          <CardPrductNews
-            desc={desc}
-            img={img}
-            pay={pay}
-            pric={pric}
-            sta={sta}
-          />
-          <CardPrductNews
-            desc={desc}
-            img={img}
-            pay={pay}
-            pric={pric}
-            sta={sta}
-          />
-          <CardPrductNews
-            desc={desc}
-            img={img}
-            pay={pay}
-            pric={pric}
-            sta={sta}
-          />
-          <CardPrductNews
-            desc={desc}
-            img={img}
-            pay={pay}
-            pric={pric}
-            sta={sta}
-          />
-          <CardPrductNews
-            desc={desc}
-            img={img}
-            pay={pay}
-            pric={pric}
-            sta={sta}
-          />
+
+          <Link to="describe">
+            <CardPrductNews
+              desc={desc}
+              img={img}
+              pay={pay}
+              pric={pric}
+              sta={sta}
+            />
+          </Link>
+
+          <Link to="describe">
+            <CardPrductNews
+              desc={desc}
+              img={img}
+              pay={pay}
+              pric={pric}
+              sta={sta}
+            />
+          </Link>
+
+          <Link to="describe">
+            <CardPrductNews
+              desc={desc}
+              img={img}
+              pay={pay}
+              pric={pric}
+              sta={sta}
+            />
+          </Link>
+
+          <Link to="describe">
+            <CardPrductNews
+              desc={desc}
+              img={img}
+              pay={pay}
+              pric={pric}
+              sta={sta}
+            />
+          </Link>
+
+          <Link to="describe">
+            <CardPrductNews
+              desc={desc}
+              img={img}
+              pay={pay}
+              pric={pric}
+              sta={sta}
+            />
+          </Link>
+
           </section>
         </NameSection>
       </MainContainer>
