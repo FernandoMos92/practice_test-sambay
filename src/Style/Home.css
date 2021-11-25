@@ -11,3 +11,7 @@
   color: rgb(111,111,111);
   padding: 2%;
 }
+
+a {
+  text-decoration: none;
+}

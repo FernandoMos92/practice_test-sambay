@@ -1,0 +1,10 @@
+a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  transform: translateX(10px);
+}

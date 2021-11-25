@@ -70,9 +70,16 @@ const MainContainer = styled.div`
 `;
 
 const NameSection = styled.label`
+  position: relative;
   color: rgba(46, 46, 46, .8);
   font-family: sans-serif;
   font-size: 28px;
+`;
+
+const SectionDescribe = styled.section`
+  width: 80vw;
+  max-height: 100vh;
+  padding: 50px;
 `;
 
 export {
@@ -83,4 +90,5 @@ export {
   CondicionalPrice,
   MainContainer,
   NameSection,
+  SectionDescribe,
 };

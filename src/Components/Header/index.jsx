@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import sambay from '../../img/sambay.svg'
 import { BsBell, BsCart3, BsSearch, BsFillBellFill } from 'react-icons/bs';
 import "../../Style/Header.css";
+import { Link } from 'react-router-dom'
 
 class index extends Component {
   constructor() {
@@ -16,6 +17,7 @@ class index extends Component {
   handleBell() {
     const { switchBell } = this.state;
     this.setState({switchBell: !switchBell})
+    if (switchBell) window.alert('Notificações ativadas!')
   }
 
   render() {
@@ -26,11 +28,11 @@ class index extends Component {
 
     return (
       <div className="header-container">
-        <img 
-          src={sambay} 
-          alt="sambay-icon" 
-          className="icon-sambay"
-        />
+          <img
+            src={sambay}
+            alt="sambay-icon"
+            className="icon-sambay"
+          />
         <BsSearch className="icon-search"/>
         <input
         className="search-input"

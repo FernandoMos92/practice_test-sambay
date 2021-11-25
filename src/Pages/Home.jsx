@@ -4,6 +4,7 @@ import CardProduct from '../Components/CardProduct';
 import CardPrductNews from '../Components/CardPrductNews';
 import '../Style/Home.css';
 import { NameSection, MainContainer} from '../Style/CardProduct';
+import { Link } from 'react-router-dom';
 const { product } = require('../Api/productApi');
 
 class Home extends Component {
@@ -17,41 +18,51 @@ class Home extends Component {
         <NameSection htmlFor="promo-section">
           Produtos em promoção
           <section className="section-promo" id="promo-section">
-            <CardProduct
-              describe={describe}
-              image={image}
-              price={price}
-              payment={payment}
-              status={status} 
-            />
-                <CardProduct
-              describe={describe}
-              image={image}
-              price={price}
-              payment={payment}
-              status={status} 
-            />
-                <CardProduct
-              describe={describe}
-              image={image}
-              price={price}
-              payment={payment}
-              status={status} 
-            />
-                <CardProduct
-              describe={describe}
-              image={image}
-              price={price}
-              payment={payment}
-              status={status} 
-            />
-                <CardProduct
-              describe={describe}
-              image={image}
-              price={price}
-              payment={payment}
-              status={status} 
-            />
+            <Link to="describe">
+              <CardProduct
+                describe={describe}
+                image={image}
+                price={price}
+                payment={payment}
+                status={status}
+              />
+            </Link>
+                <Link to="describe">
+                  <CardProduct
+                    describe={describe}
+                    image={image}
+                    price={price}
+                    payment={payment}
+                    status={status} 
+                  />
+                </Link>
+                <Link to="describe">
+                  <CardProduct
+                    describe={describe}
+                    image={image}
+                    price={price}
+                    payment={payment}
+                    status={status} 
+                  />
+                </Link>
+                <Link to="describe">
+                  <CardProduct
+                    describe={describe}
+                    image={image}
+                    price={price}
+                    payment={payment}
+                    status={status} 
+                  />
+                </Link>
+                <Link to="describe">
+                  <CardProduct
+                    describe={describe}
+                    image={image}
+                    price={price}
+                    payment={payment}
+                    status={status} 
+                  />
+                </Link>
           </section>
         </NameSection>
         <NameSection htmlFor="section-news">
